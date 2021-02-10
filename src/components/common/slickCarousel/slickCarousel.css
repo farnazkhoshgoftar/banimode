@@ -1,0 +1,30 @@
+.slideItem img {
+  width: 100%;
+}
+
+.slick-slide img {
+  border-radius: 10px;
+}
+.homePageSlider {
+  margin: 20px 0px 42px 0px;
+  width: calc(100% - 10px);
+}
+
+.homePageSlider .slick-dots li button {
+  width: 22px;
+  border-radius: 10px;
+  height: 5px;
+  padding: 0px;
+  background: gray;
+}
+
+.homePageSlider .slick-dots li button::before {
+  content: "";
+}
+
+.homePageSlider .slick-dots li.slick-active button {
+  background: #00bf6f;
+}
+.slick-dots {
+  margin: -12px 0px;
+}

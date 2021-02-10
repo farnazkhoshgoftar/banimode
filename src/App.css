@@ -1,38 +1,52 @@
+/*=============================================css reset start=============================================*/
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*=============================================css reset end=============================================*/
+
+
+/*=============================================font start=============================================*/
+
+@font-face {
+    font-family: myFont1;
+    src: url(./assets/fonts/IRANSansWeb.ttf);
+}
+
+body {
+    font-family: myFont1 !important;
+}
+
+
+/*=============================================font end=============================================*/
+
 .App {
-  text-align: center;
+    padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+    display: block;
+    margin: 10px auto;
+    width: 45%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#buyGif {
+    width: 100%;
 }

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import baniLogo from "./assets/images/banilogo.png";
+import Button from "./components/common/button/button";
+import SlickCarousel from "./components/common/slickCarousel/slickCarousel";
+// import Category from "./components/common/category/category";
+import Timer from "./components/common/timer/timer";
 
 function App() {
+  const startDate = new Date().getTime() + 31536000000;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="logo" src={baniLogo} />
+
+      <Button
+        textButton="۱خرید + ۱هدیه با ۱۰٪ تخفیف بیشتر"
+        buttonCustomStyle="discount"
+      />
+
+      <SlickCarousel />
+
+      <Button
+        textButton="دانلود اپلیکیشن بانی مد"
+        buttonCustomStyle="download"
+      />
+
+      {/* <Category /> */}
+
+      <Timer startDate={startDate} />
+
+      {/* <img id="buyGif" src="/images/buy-gif.jpg" /> */}
     </div>
   );
 }

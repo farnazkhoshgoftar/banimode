@@ -1,0 +1,35 @@
+#timerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#timer .time {
+    background: rgb(219, 219, 219);
+    color: gray;
+    font-size: 20px;
+    width: 41px;
+    display: flex;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+#timer .colon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.expired {
+    font-size: 20px;
+    color: rgb(126, 49, 49);
+    border: 1px solid rgb(126, 49, 49);
+    padding: 20px;
+}
+
+#amazing {
+    font-size: 20px;
+}
